@@ -1,34 +1,25 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from "../pages/Skills";
-import Contact from "../pages/Contact";
-import Experience from "../pages/Experience";
-import Homepage from "../pages/My";
-import Projects from "../pages/Projects";
-import Resume from "../pages/Resume";
+// eslint-disable-next-line no-unused-vars
+import { useState } from "react";
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { navLinks } from "../constants";
 
-export default function Navbar() {
+const Navbar = () => {
   return (
     <Router>
-      <div>
-        <nav className="nav flex flex-row">
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/About">About</Link></li>
-            <li><Link to="/Experience">Experience</Link></li>
-            <li><Link to="/Projects">Projects</Link></li>
-            <li><Link to="/Contact">Contact</Link></li>
-            <li><Link to="/Resume">Resume</Link></li>
-          </ul>
-        </nav>
-        <Route path="/" exact component={Homepage} />
-        <Route path="/About" component={About} />
-        <Route path="/Experience" component={Experience} />
-        <Route path="/Projects" component={Projects} />
-        <Route path="/Contact" component={Contact} />
-        <Route path="/Resume" component={Resume} />
-      </div>
+      <nav className="nav flex align-center py-14">
+        <ul className="w-screen flex flex-row justify-evenly">
+          {navLinks.map((link) => (
+            <li key={link.id}>
+              <Link to={`/${link.id}`}>{link.title}</Link>
+            </li>
+          ))}
+        </ul>
+        {/* Mobile Navbar */}
+      </nav>
     </Router>
   );
-}
+};
+
+export default Navbar;
