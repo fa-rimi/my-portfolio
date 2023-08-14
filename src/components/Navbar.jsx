@@ -1,10 +1,10 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import About from "../pages/About";
+import About from "../pages/Skills";
 import Contact from "../pages/Contact";
 import Experience from "../pages/Experience";
-import Homepage from "../pages/Homepage";
+import Homepage from "../pages/My";
 import Projects from "../pages/Projects";
 import Resume from "../pages/Resume";
 
