@@ -8,15 +8,16 @@ import { navLinks } from "../constants";
 const Navbar = () => {
   return (
     <Router>
-      <nav className="nav flex align-center py-14">
-        <ul className="w-screen flex flex-row justify-evenly">
+      <nav className="navbar w-screen py-14 flex align-center ">
+        {/* Responsive Navbar */}
+        <ul className=" sm:flex hidden justify-evenly items-center flex-1">
           {navLinks.map((link) => (
-            <li key={link.id}>
+            <li key={link.id} className="cursor-pointer">
               <Link to={`/${link.id}`}>{link.title}</Link>
             </li>
           ))}
         </ul>
-        {/* Mobile Navbar */}
+        {/* Desktop Navbar */}
       </nav>
     </Router>
   );
