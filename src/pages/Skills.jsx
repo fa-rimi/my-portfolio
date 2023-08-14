@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 
-const Contact = () => {
+const Skills = () => {
   return (
-    <div>Contact</div>
+    <div>Skills</div>
   )
 }
 
-export default Contact
+export default Skills

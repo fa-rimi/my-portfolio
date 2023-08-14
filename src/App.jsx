@@ -1,13 +1,11 @@
-// eslint-disable-next-line no-unused-vars
+/* eslint-disable no-unused-vars */
 import React from 'react'
-import './App.css'
-import Homepage from './pages/Homepage'
+import Navbar from './components/Navbar'
 
-function App() {
-
+const App = () => {
   return (
-    <div className='App h-screen w-screen'>
-      <Homepage/>
+    <div className="App w-screen h-screen">
+      <Navbar/>
     </div>
   )
 }
