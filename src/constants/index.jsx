@@ -8,42 +8,37 @@ import Skills from "../pages/Skills";
 // navbar links
 export const navLinks = [
   {
-    id: "my",
-    title: "My",
-    path: "/",
-    // component: My
-  },
-  {
     id: "skills",
     title: "skills.",
-    path: "./src/pages/Skills.jsx",
+    path: "/skills",
     component: Skills,
   },
   {
     id: "experience",
     title: "experience.",
-    path: "./src/pages/Experience.jsx",
+    path: "/experience",
     component: Experience,
   },
   {
     id: "projects",
     title: "projects.",
-    path: "./src/pages/Projects.jsx",
+    path: "/projects",
     component: Projects,
   },
   {
     id: "contact",
     title: "contact.",
-    path: "./src/pages/Contact.jsx",
+    path: "/contact",
     component: Contact,
   },
   {
     id: "resume",
     title: "resume.",
-    path: "./src/pages/Resume.jsx",
+    path: "/resume",
     component: Resume,
   },
 ];
+
 
 export const responsiveNavLinks = [
   {

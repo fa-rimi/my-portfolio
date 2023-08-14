@@ -1,10 +1,8 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
-
-const Skills = () => {
+export default function Skills() {
   return (
-    <div>Skills</div>
+    <div>
+      <h1>Skills</h1>
+    </div>
   )
 }
-
-export default Skills
