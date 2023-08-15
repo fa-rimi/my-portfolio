@@ -68,9 +68,39 @@ export const navLinks = [
 export const workExp = [
   {
     id: "cffg",
-    title: "Change Food For Good",
+    name: "Change Food For Good",
     role: "Junior Web Developer & Technical Project Manager",
     description: "",
     skills: "",
   },
+]
+
+export const techProjects = [
+  {
+    id: "",
+    name: "",
+    type: "",
+    tech: "",
+  },
+  {
+    id: "",
+    name: "",
+    type: "",
+    tech: "",
+  },
+  // {
+  //   id: "",
+  //   name: "",
+  //   type: "",
+  //   tech: "",
+  // },
+]
+
+export const contactInfo = [
+  {
+    id: "email",
+    type: "email",
+    info: "a.fatimaarimi@gmail.com",
+    icon: "",
+  }
 ]

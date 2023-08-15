@@ -8,7 +8,7 @@ const Experience = () => {
       <div className={`w-6/12 flex flex-col md:flex-col `}>
         {workExp.map((exp) => (
           <div key={exp.id}>
-            <h2>{exp.title}</h2>
+            <h2>{exp.name}</h2>
             <h5>{exp.role}</h5>
             <h4>{exp.description}</h4>
             <h4>{exp.skills}</h4>
