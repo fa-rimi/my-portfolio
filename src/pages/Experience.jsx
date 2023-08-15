@@ -1,11 +1,13 @@
 // import React from "react";
 import { workExp } from "../constants/index";
+import { doubleCol, doubleColTitle, doubleColInfo, headingStyles } from "../constants/styles"
+import "../App.css"
 
 const Experience = () => {
   return (
-    <section id="experience" className={`w-screen flex flex-row`}>
-      <div className={`w-5/12`}>Experience</div>
-      <div className={`w-6/12 flex flex-col md:flex-col `}>
+    <section id="experience" className={`${doubleCol}`}>
+      <div className={`${doubleColTitle} ${headingStyles}`}>Experience</div>
+      <div className={`${doubleColInfo}`}>
         {workExp.map((exp) => (
           <div key={exp.id}>
             <h2>{exp.name}</h2>

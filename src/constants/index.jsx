@@ -1,4 +1,6 @@
 // Anything that wont change on the page
+
+
 import My from "../pages/My";
 import Contact from "../pages/Contact";
 import Experience from "../pages/Experience";
@@ -77,22 +79,33 @@ export const workExp = [
 
 export const techProjects = [
   {
-    id: "",
-    name: "",
-    type: "",
+    id: "flipIT",
+    name: "flip IT",
+    type: "game",
     tech: "",
+    link: "",
+    demo: "",
   },
   {
-    id: "",
-    name: "",
-    type: "",
+    id: "bbb",
+    name: "Beyond Bold And Brave",
+    type: "design",
     tech: "",
+    link: "",
+  },
+  {
+    id: "aot",
+    name: "America On Trial",
+    type: "web design",
+    tech: "",
+    link: "",
   },
   // {
   //   id: "",
   //   name: "",
   //   type: "",
   //   tech: "",
+  //   link: "",
   // },
 ]
 
