@@ -1,6 +1,5 @@
 // Anything that wont change on the page
 
-
 import My from "../pages/My";
 import Contact from "../pages/Contact";
 import Experience from "../pages/Experience";
@@ -75,30 +74,35 @@ export const workExp = [
     description: "",
     skills: "",
   },
-]
+];
 
 export const techProjects = [
   {
+    category: ["Develop"],
     id: "flipIT",
     name: "flip IT",
-    type: "game",
+    type: "Game",
     tech: "",
     link: "",
-    demo: "",
+    imgURL: "",
   },
   {
+    category: ["Design"],
     id: "bbb",
     name: "Beyond Bold And Brave",
-    type: "design",
+    type: "Branding & Design",
     tech: "",
     link: "",
+    imgURL: "",
   },
   {
+    category: ["Develop", "Design"],
     id: "aot",
     name: "America On Trial",
-    type: "web design",
+    type: "Web Development",
     tech: "",
     link: "",
+    imgURL: "",
   },
   // {
   //   id: "",
@@ -107,7 +111,7 @@ export const techProjects = [
   //   tech: "",
   //   link: "",
   // },
-]
+];
 
 export const contactInfo = [
   {
@@ -115,5 +119,5 @@ export const contactInfo = [
     type: "email",
     info: "a.fatimaarimi@gmail.com",
     icon: "",
-  }
-]
+  },
+];

@@ -2,6 +2,8 @@
 import React from "react";
 import { techProjects } from "../constants";
 import { doubleCol, doubleColTitle, doubleColInfo, headingStyles } from "../constants/styles"
+import Cards from "../components/Cards"
+import Category from "../components/Category";
 
 const Projects = () => {
   return (
@@ -17,15 +19,8 @@ const Projects = () => {
             <button type="button">/In-Progress</button>
           </span>
         </div>
-        <div className={`${doubleColInfo}`}>
-          {techProjects.map(project => (
-            <div key={project.id}>
-              <span>
-              <div>{project.name}</div>
-              <div>{project.type}</div>
-              </span>
-            </div>
-          ))};
+        <div className={`${doubleColInfo} flex-wrap`}>
+          <Cards/>
         </div>
       </div>
     </section>
