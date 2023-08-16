@@ -6,7 +6,7 @@ export default function Skills() {
       id="skills"
       className={`w-screen flex flex-col items-center justify-center`}>
       <div
-        className={`text-[#F2F7F2] w-10/12 flex flex-col items-around border-solid`}>
+        className={`text-[#161B36] w-10/12 flex flex-col items-around border-solid`}>
         <div>
           {/* Use grid with responsive columns */}
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">

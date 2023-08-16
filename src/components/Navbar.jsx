@@ -16,8 +16,8 @@ const Navbar = () => {
               key={nav.id}
               // active === nav.title ? "text-white" : "text-dimWhite"
               // when link is active then the title will be white : otherwise dimwhite
-              className={`cursor-pointer text-[17px] ${
-                active === nav.title ? "text-slate-400" : "text-white"
+              className={`font-['Cousine'] hover:font-[700] cursor-pointer text-[17px] ${
+                active === nav.title ? "text-[#161B36] font-[700]"  : "text-black"
               }`}
               onClick={() => setActive(nav.title)}>
               {/* within the href it is a # instead of / because # (fragment identifier) -- meaning in this single page application i am scrolling down to that section as oppose to / (path) which would take me to a different page all together (maybe later)*/}
