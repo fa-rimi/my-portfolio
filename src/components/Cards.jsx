@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import {
   Card,
@@ -8,7 +9,6 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { techProjects } from "../constants/index";
-// import Category from "./Category";
 
 const Cards = () => {
   const [data, setData] = useState(techProjects);

@@ -19,7 +19,7 @@ const Projects = () => {
           <div className={`${headingStyles}`}>Projects</div>
         </div>
         <div>
-          <Cards data={techProjects} containerClassName={`${doubleColDisplay}`}/>
+          <Cards className=""/>
         </div>
       </div>
     </section>
