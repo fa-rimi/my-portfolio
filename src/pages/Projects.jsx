@@ -5,11 +5,11 @@ import {
   doubleCol,
   doubleColTitle,
   doubleColInfo,
+  doubleColDisplay,
   headingStyles,
   responsiveSingleRow,
 } from "../constants/styles";
 import Cards from "../components/Cards";
-// import Category from "../components/Category";
 
 const Projects = () => {
   return (
@@ -17,10 +17,9 @@ const Projects = () => {
       <div className={`${doubleCol}`}>
         <div className={`${doubleColTitle}`}>
           <div className={`${headingStyles}`}>Projects</div>
-          {/* <Category setData={setData} /> */}
         </div>
-        <div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4`}>
-          <Cards/>
+        <div>
+          <Cards data={techProjects} containerClassName={`${doubleColDisplay}`}/>
         </div>
       </div>
     </section>
