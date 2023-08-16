@@ -13,3 +13,5 @@ export const box = "text-center border rounded-lg";
 export const boxStyle = "shadow-[0_3px_10px_rgb(0,0,0,0.2)]";
 export const boxHover =
   "shadow-[7px_13px_57px_5px_#161B36]";
+
+export const genSection = "w-screen py-[100px]";
