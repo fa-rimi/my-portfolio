@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chatscope/chat-ui-kit-react": "^1.10.1",
     "@material-tailwind/react": "^2.1.0",
     "@types/react-router-dom": "^5.3.3",
     "react": "^18.2.0",
