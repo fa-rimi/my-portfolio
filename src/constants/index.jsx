@@ -78,7 +78,7 @@ export const workExp = [
 
 export const techProjects = [
   {
-    category: ["Develop"],
+    category: "Develop",
     id: "flipIT",
     name: "flip IT",
     type: "Game",
@@ -87,7 +87,7 @@ export const techProjects = [
     imgURL: "",
   },
   {
-    category: ["Design"],
+    category: "Design",
     id: "bbb",
     name: "Beyond Bold And Brave",
     type: "Branding & Design",
@@ -96,7 +96,7 @@ export const techProjects = [
     imgURL: "",
   },
   {
-    category: ["Develop", "Design"],
+    category: "Develop",
     id: "aot",
     name: "America On Trial",
     type: "Web Development",
