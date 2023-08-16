@@ -2,12 +2,13 @@
 import React from "react";
 import { useState } from "react";
 import { navLinks } from "../constants/index";
+// import { close, menu } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
 
   return (
-    <div>
+    <div className="">
       <nav className="w-screen flex justify-center items-center scroll-smooth">
         <ul className="w-screen py-10 px-20 sm:flex hidden justify-evenly items-center">
           {/* We are mapping over our navlinks(getting one nav link, and index) */}
@@ -26,9 +27,6 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div>
-          <img></img>
-        </div>
       </nav>
     </div>
   );

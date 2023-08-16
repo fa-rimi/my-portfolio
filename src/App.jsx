@@ -11,7 +11,7 @@ import "../src/App.css"
 
 const App = () => {
   return (
-    <div className={`w-screen h-screen flex flex-col items-center`}>
+    <div className={`w-screen h-screen flex flex-col items-center bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black`}>
       <Navbar />
       <My />
       <Skills />

@@ -19,7 +19,7 @@ const Projects = () => {
           <div className={`${headingStyles}`}>Projects</div>
         </div>
         <div>
-          <Cards data={techProjects} containerClassName={`${doubleColDisplay}`}/>
+          <Cards className={`grid grid-cols-3 gap-12`}/>
         </div>
       </div>
     </section>
