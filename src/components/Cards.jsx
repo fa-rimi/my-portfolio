@@ -9,6 +9,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { techProjects } from "../constants/index";
+import { box } from "../constants/styles"
 
 const Cards = () => {
   const [data, setData] = useState(techProjects);
@@ -37,20 +38,18 @@ const Cards = () => {
       </span>
       <div>
         {data.map((project) => (
-          <Card key={project.id}>
+          <Card key={project.id} className={`${box} p-10`}>
             <CardHeader>
               <img src="https://placehold.co/300" />
             </CardHeader>
             <CardBody>
+              <span className="flex flex-row justify-between items-center">
               <h2>{project.name}</h2>
-            </CardBody>
-            <CardFooter className="pt-0">
               <a href="#">
                 <Button
                   size="sm"
                   variant="text"
                   className="flex items-center gap-2">
-                  View Project
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -72,7 +71,9 @@ const Cards = () => {
                   style="width:250px;height:250px"></lord-icon> */}
                 </Button>
               </a>
-            </CardFooter>
+              </span>
+            </CardBody>
+            {/* <CardFooter className="pt-0"></CardFooter> */}
           </Card>
         ))}
       </div>
