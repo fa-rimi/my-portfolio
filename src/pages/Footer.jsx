@@ -1,5 +1,4 @@
 import React from "react";
-import Spotify from "../components/Spotify";
 
 const Footer = () => {
   return (
@@ -14,7 +13,7 @@ const Footer = () => {
               width="24"
               height="24"
               src="https://img.icons8.com/material-rounded/24/FFFFFF/github.png"
-              alt="github"
+              alt="GitHub"
             />
           </a>
         </li>
@@ -27,23 +26,21 @@ const Footer = () => {
               width="30"
               height="30"
               src="https://img.icons8.com/ios-glyphs/30/FFFFFF/linkedin.png"
-              alt="linkedin"
+              alt="LinkedIn"
             />
           </a>
         </li>
-        <div className="spotify"></div>
+        {/* Add your Spotify button or any other content here */}
       </ul>
       <div>
-        © {new Date().getFullYear()} Rimi &
+        © {new Date().getFullYear()} Rimi &{" "}
         <a
           href="https://www.google.com/"
           target="_blank"
           rel="noopener noreferrer">
-          {" "}
           Her Resources
         </a>
       </div>
-      <Spotify />
     </footer>
   );
 };
