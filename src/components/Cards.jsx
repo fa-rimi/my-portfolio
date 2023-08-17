@@ -25,7 +25,7 @@ const Cards = () => {
         Filter by
         <button
           type="button"
-          onClick={() => setData(Cards)}
+          onClick={() => setData(techProjects)}
           className={`${hoverFont}`}>
           /All
         </button>

@@ -22,7 +22,11 @@ const Experience = () => {
           <div key={exp.id}>
             <h2 className={`text-[25px]`}>{exp.name}</h2>
             <h5 className={`${subTitle}`}>{exp.role}</h5>
-            <h4>{exp.description}</h4>
+            <div>
+            <li>{exp.description[0]}</li>
+            <li>{exp.description[1]}</li>
+            <li>{exp.description[2]}</li>
+            </div>
             <h4>{exp.skills}</h4>
           </div>
         ))}

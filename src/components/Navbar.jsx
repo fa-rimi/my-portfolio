@@ -6,8 +6,13 @@ import { hoverFont } from "../constants/styles";
 
 const Navbar = () => {
   const [isNavShrunk, setIsNavShrunk] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [active, setActive] = useState("Home");
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+  
   const handleScroll = () => {
     if (window.scrollY > 0) {
       setIsNavShrunk(true);
