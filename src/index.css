@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.shrink {
+    width: 100vw;
+    transition: all 0.5s;
+    transform: scale(0.8);
+    padding: 8px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Optional: Add a background color when shrinking */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a box shadow when shrinking */
+}
+
+/* Add the styles for sticky positioning */
+.scroll-smooth:not(.shrink) {
+    transition: all 0.5s;
+    padding: 16px 0;
+    /* Adjust the padding to your original value */
+    font-size: 1.6rem;
+    /* Adjust the font size to your original value */
+    background-color: transparent;
+    /* Remove background color */
+    box-shadow: none;
+    /* Remove box shadow */
+}
+
+@media (max-width: 640px) {
+    .shrink {
+        padding: 6px 0;
+        /* Adjust the padding for mobile */
+        font-size: 1rem;
+        /* Adjust the font size for mobile */
+        background-color: rgba(255, 255, 255, 0.9);
+        /* Optional: Add a background color for mobile */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        /* Optional: Add a box shadow for mobile */
+    }
+
+    .scroll-smooth:not(.shrink) {
+        padding: 10px 0;
+        /* Adjust the padding for mobile */
+        font-size: 1.4rem;
+        /* Adjust the font size for mobile */
+        background-color: transparent;
+        /* Remove background color for mobile */
+        box-shadow: none;
+        /* Remove box shadow for mobile */
+    }
+}
