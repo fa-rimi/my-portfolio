@@ -59,3 +59,10 @@
     z-index: -1;
     will-change: transform;
 }
+
+footer {
+    flex-shrink: 0;
+    /* Prevent footer from shrinking */
+    margin-top: auto;
+    /* Push footer to the bottom */
+}
