@@ -9,7 +9,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { techProjects } from "../constants/index";
-import { box } from "../constants/styles";
+import { box, hoverFont } from "../constants/styles";
 
 const Cards = () => {
   const [data, setData] = useState(techProjects);
@@ -26,25 +26,25 @@ const Cards = () => {
         <button
           type="button"
           onClick={() => setData(Cards)}
-          className={`font-['Raleway'] hover:font-[700] hover:italic px-4`}>
+          className={`${hoverFont}`}>
           /All
         </button>
         <button
           type="button"
           onClick={() => filterProjects("Design")}
-          className={`font-['Raleway'] hover:font-[700] hover:italic px-4`}>
+          className={`${hoverFont}`}>
           /Design
         </button>
         <button
           type="button"
           onClick={() => filterProjects("Develop")}
-          className={`font-['Raleway'] hover:font-[700] hover:italic px-4`}>
+          className={`${hoverFont}`}>
           /Develop
         </button>
         <button
           type="button"
           onClick={() => filterProjects("In-Progress")}
-          className={`font-['Raleway'] hover:font-[700] hover:italic px-4`}>
+          className={`${hoverFont}`}>
           /In-Progress
         </button>
       </span>

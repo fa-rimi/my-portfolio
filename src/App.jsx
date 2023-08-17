@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className={`w-screen h-screen flex flex-col`}>
       <Navbar />
-      <div className={`px-[50px]`}>
+      <div>
         <My />
         <Skills />
         <Experience />

@@ -15,3 +15,8 @@ export const boxHover =
   "shadow-[7px_13px_57px_5px_#161B36]";
 
 export const genSection = "w-screen py-[100px]";
+
+// font styling
+export const hoverFont = "font-['Cousine'] hover:font-[700] hover:italic px-4";
+export const title = "";
+export const subTitle = "text-[#222831] font-[Cousine]";
