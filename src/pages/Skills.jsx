@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { box, boxStyle, boxHover } from "../constants/styles";
 
 export default function Skills() {
