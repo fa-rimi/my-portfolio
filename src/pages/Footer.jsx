@@ -71,12 +71,12 @@ const Footer = () => {
           </button>
         </li> */}
       </ul>
-      <div>
-      <button type="button" onClick={toggleJokes}>
+      <div className="flex items-center">
+      <button type="button" onClick={toggleJokes} >
           {showJokes ? null : "got jokes?"}
         </button>
         {showJokes && (
-          <div className="bg-white text-black p-2 rounded-lg absolute bottom-4 right-4">
+          <div className="bg-white text-black p-2 rounded-lg bottom-4 right-4">
             {joke}
           </div>
         )}{" "}
