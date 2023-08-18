@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Footer = () => {
+  const [showJokes, setShowJokes] = useState(false);
+
+  const toggleJokes = () => {
+    setShowJokes(!showJokes);
+  };
+
   return (
     <footer className="flex flex-row justify-between items-center bg-gray-800 text-white p-4 text-center fixed bottom-0 w-full">
       <ul className="flex items-center space-x-4">
@@ -30,7 +36,7 @@ const Footer = () => {
             />
           </a>
         </li>
-        <li>
+        {/* <li>
           <button type="button" className="flex items-center">
             <img
               width="30"
@@ -39,16 +45,17 @@ const Footer = () => {
               alt="spotify"
             />
           </button>
-        </li>
+        </li> */}
       </ul>
       <div>
-        © {new Date().getFullYear()} Rimi &{" "}
-        <a
-          href="https://www.google.com/"
-          target="_blank"
-          rel="noopener noreferrer">
-          Her Resources
-        </a>
+        <button type="button" onClick={toggleJokes}>
+          got jokes?
+        </button>
+        {showJokes && (
+          <div className="bg-white text-black p-2 rounded-lg absolute bottom-4 right-4">
+            Here's a funny joke!
+          </div>
+        )}
       </div>
     </footer>
   );
