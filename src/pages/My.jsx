@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { genSection } from "../constants/styles";
+import smiley from "../assets/smiley.jpeg"
 
 const My = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -21,10 +22,10 @@ const My = () => {
     <section id="my"
     className={`${genSection}`}
     style={{
-      backgroundImage: `url("https://e0.pxfuel.com/wallpapers/674/889/desktop-wallpaper-circle-smile-face-drip-drippy-original-vintage-yellow-yello-smiley.jpg")`,
+      backgroundImage: `url(${smiley})`,
       backgroundAttachment: 'fixed',
-      backgroundPosition: 'center',
-      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '',
+      backgroundRepeat: 'repeat',
       backgroundSize: 'cover',
     }}>
       <div
