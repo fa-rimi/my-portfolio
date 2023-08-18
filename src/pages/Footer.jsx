@@ -1,7 +1,29 @@
 import React, { useState } from "react";
 
 const Footer = () => {
-  const [showJokes, setShowJokes] = useState(false);
+  const [joke, setJoke] = useState(""); // Initialize joke to an empty string because we dont have it yet
+  const [showJokes, setShowJokes] = useState(false); // Initialize showJokes as false because we dont have it yet
+  const apiKey = "jO0oqBAYG9bZgfRLCI5e9wTKTfRapmliBvW8zDQr";
+
+  const options = {
+    method: "GET",
+    headers: {
+      "X-Api-Key": apiKey,
+    },
+  };
+
+  const apiURL = "https://api.api-ninjas.com/v1/dadjokes?limit=1";
+  // Dad Jokes URL with limit query parameter to fetch one joke at a time
+
+  const getJoke = async () => {
+    try {
+      const response = await fetch(apiURL, options); // Sending an API request using the fetch and wait
+      const data = await response.json(); // Parse the JSON data and wait for it to process
+      setJoke(data[0].joke);
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
   const toggleJokes = () => {
     setShowJokes(!showJokes);
@@ -48,14 +70,19 @@ const Footer = () => {
         </li> */}
       </ul>
       <div>
-        <button type="button" onClick={toggleJokes}>
+        <button
+          type="button"
+          onClick={() => {
+            getJoke();
+            toggleJokes();
+          }}>
           got jokes?
         </button>
         {showJokes && (
           <div className="bg-white text-black p-2 rounded-lg absolute bottom-4 right-4">
-            Here's a funny joke!
+            {joke}
           </div>
-        )}
+        )}{" "}
       </div>
     </footer>
   );
