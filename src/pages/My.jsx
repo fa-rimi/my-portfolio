@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { genSection } from "../constants/styles";
-import smiley from "../assets/smiley.jpeg"
+import smiley from "../assets/smiley.jpeg";
 
 const My = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -19,15 +19,19 @@ const My = () => {
   const parallaxOffset = scrollY * 0.3; // Adjust the parallax speed here
 
   return (
-    <section id="my"
-    className={`${genSection}`}
-    style={{
-      backgroundImage: `url(${smiley})`,
-      backgroundAttachment: 'fixed',
-      backgroundPosition: '',
-      backgroundRepeat: 'repeat',
-      backgroundSize: 'cover',
-    }}>
+    <section
+      id="my"
+      className={`${genSection}`}
+      style={{
+        backgroundImage: `url(${smiley})`,
+        backgroundAttachment: "fixed",
+        backgroundPosition: "",
+        backgroundRepeat: "repeat",
+        backgroundSize: "cover",
+        "@media (max-width: 768px)": {
+          backgroundSize: "contain", // You can adjust this value as needed
+        },
+      }}>
       <div
         className={`text-white flex sm:flex-row flex-col justify-start items-baseline`}
         style={{ transform: `translateY(-${parallaxOffset}px)` }}>
