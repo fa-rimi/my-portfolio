@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Tooltip } from "@material-tailwind/react";
 
 const Footer = () => {
   const [joke, setJoke] = useState(""); // Initialize joke to an empty string because we dont have it yet
@@ -34,6 +35,7 @@ const Footer = () => {
   return (
     <footer className="flex flex-row justify-between items-center bg-gray-800 text-white p-4 text-center fixed bottom-0 w-full">
       <ul className="flex items-center space-x-4">
+        <Tooltip content="GitHub" className="text-[10px] text-center">
         <li>
           <a
             href="https://github.com/fa-rimi"
@@ -47,6 +49,8 @@ const Footer = () => {
             />
           </a>
         </li>
+        </Tooltip>
+        <Tooltip content="LinkedIn" className="text-[10px] text-center">
         <li>
           <a
             href="https://www.linkedin.com/in/fatima-rimi-8b88971b8/"
@@ -60,17 +64,9 @@ const Footer = () => {
             />
           </a>
         </li>
-        {/* <li>
-          <button type="button" className="flex items-center">
-            <img
-              width="30"
-              height="30"
-              src="https://img.icons8.com/ios-glyphs/30/FFFFFF/spotify.png"
-              alt="spotify"
-            />
-          </button>
-        </li> */}
+        </Tooltip>
       </ul>
+      <Tooltip content="i have limited api calls please dont refresh" className="text-[10px] text-center">
       <div className="flex items-center">
       <button type="button" onClick={toggleJokes} >
           {showJokes ? null : "got jokes?"}
@@ -81,6 +77,7 @@ const Footer = () => {
           </div>
         )}{" "}
       </div>
+      </Tooltip>
     </footer>
   );
 };
