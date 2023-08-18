@@ -28,7 +28,7 @@ const My = () => {
         backgroundPosition: "",
         backgroundRepeat: "repeat",
         backgroundSize: "cover",
-        "@media (max-width: 768px)": {
+        "@media (maxWidth: 640px)": {
           backgroundSize: "contain", // You can adjust this value as needed
         },
       }}>
