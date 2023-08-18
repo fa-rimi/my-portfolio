@@ -10,8 +10,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer">
             <img
-              width="24"
-              height="24"
+              width="30"
+              height="30"
               src="https://img.icons8.com/material-rounded/24/FFFFFF/github.png"
               alt="GitHub"
             />
@@ -30,7 +30,16 @@ const Footer = () => {
             />
           </a>
         </li>
-        {/* Add your Spotify button or any other content here */}
+        <li>
+          <button type="button" className="flex items-center">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-glyphs/30/FFFFFF/spotify.png"
+              alt="spotify"
+            />
+          </button>
+        </li>
       </ul>
       <div>
         © {new Date().getFullYear()} Rimi &{" "}
