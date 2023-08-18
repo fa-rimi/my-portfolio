@@ -3,12 +3,12 @@ import React, { useState } from "react";
 const Footer = () => {
   const [joke, setJoke] = useState(""); // Initialize joke to an empty string because we dont have it yet
   const [showJokes, setShowJokes] = useState(false); // Initialize showJokes as false because we dont have it yet
-  const apiKey = "jO0oqBAYG9bZgfRLCI5e9wTKTfRapmliBvW8zDQr";
+//   const apiKey = "jO0oqBAYG9bZgfRLCI5e9wTKTfRapmliBvW8zDQr";
 
   const options = {
     method: "GET",
     headers: {
-      "X-Api-Key": apiKey,
+      "X-Api-Key": import.meta.env.VITE_APP_DADJ_API,
     },
   };
 
