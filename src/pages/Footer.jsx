@@ -25,8 +25,10 @@ const Footer = () => {
     }
   };
 
-  const toggleJokes = () => {
-    setShowJokes(!showJokes);
+  const toggleJokes = async () => {
+    setShowJokes(false); // Hide the button text
+    await getJoke(); // Fetch the joke
+    setShowJokes(true); // Show the joke
   };
 
   return (
@@ -70,13 +72,8 @@ const Footer = () => {
         </li> */}
       </ul>
       <div>
-        <button
-          type="button"
-          onClick={() => {
-            getJoke();
-            toggleJokes();
-          }}>
-          got jokes?
+      <button type="button" onClick={toggleJokes}>
+          {showJokes ? null : "got jokes?"}
         </button>
         {showJokes && (
           <div className="bg-white text-black p-2 rounded-lg absolute bottom-4 right-4">
