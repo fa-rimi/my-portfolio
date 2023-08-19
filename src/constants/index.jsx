@@ -79,6 +79,14 @@ export const workExp = [
     ],
     skills: "",
   },
+  // {
+  //   id: "",
+  //   name: "",
+  //   role: "",
+  //   date: "",
+  //   description: [    ],
+  //   skills: "",
+  // },
 ];
 
 export const techProjects = [
