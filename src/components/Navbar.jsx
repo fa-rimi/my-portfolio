@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { navLinks } from "../constants/index";
-import { hoverFont } from "../constants/styles";
+import { clickable, hoverFont } from "../constants/styles";
 
 const Navbar = () => {
   const [isNavShrunk, setIsNavShrunk] = useState(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${hoverFont} cursor-pointer text-[17px] ${
+              className={`${hoverFont} ${clickable} text-[17px] ${
                 active === nav.title
                   ? "text-[#161B36] font-[700]"
                   : "text-black"

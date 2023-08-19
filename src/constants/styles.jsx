@@ -23,4 +23,7 @@ export const hoverFont = "font-['Cousine'] hover:font-[700] hover:italic px-4";
 export const title = "";
 export const subTitle = "text-[#222831] font-[Cousine] text-[14px] ";
 
+// button styling 
+export const clickable = "cursor-pointer"
+
 
