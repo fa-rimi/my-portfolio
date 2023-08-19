@@ -11,15 +11,15 @@ export const sameLine = "flex flex-col md:flex-row justify-between"; // when spa
 export const clickable = "cursor-pointer";
 
 // double column
-export const doubleCol = "w-screen flex flex-col max-md:flex-row max-md:items-center";
-export const doubleColTitle = "w-full lg:w-5/12 max-md:text-center";
-export const doubleColInfo = "w-full md:w-6/12 flex flex-col grow";
+export const doubleCol = "w-screen flex flex-col min-sm:max-md:flex-row";
+export const doubleColTitle = "w-5/12";
+export const doubleColInfo = "w-6/12 flex flex-col grow";
 export const doubleColDisplay =
   "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9";
 
 // section styling
 export const genSection = "w-screen py-[300px]";
-export const genSection2 = "w-screen flex px-2 lg:py-[220px] lg:px-[50px]";
+export const genSection2 = "w-screen px-2 lg:py-[220px] lg:px-[50px]";
 export const genSection3 = "";
 
 export const headingStyles = "text-[70px] font-semibold mb-4";
