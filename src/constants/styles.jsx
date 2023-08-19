@@ -9,12 +9,14 @@ export const doubleColDisplay = "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 
 
 export const responsiveSingleRow = "sm:w-screen flex flex-col";
 
-export const box = "text-center border rounded-lg";
+export const box = "border border-black p-4 h-[250px] text-center";
 export const boxStyle = "shadow-[0_3px_10px_rgb(0,0,0,0.2)]";
 export const boxHover =
   "shadow-[7px_13px_57px_5px_#161B36]";
 
 export const genSection = "w-screen py-[300px]";
+export const genSection2= "w-screen py-[220px]";
+export const genSection3 = "";
 
 // font styling
 export const hoverFont = "font-['Cousine'] hover:font-[700] hover:italic px-4";

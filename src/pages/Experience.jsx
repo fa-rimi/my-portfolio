@@ -9,31 +9,43 @@ import {
   genSection,
   hoverFont,
   subTitle,
+  genSection2,
 } from "../constants/styles";
 import { Button } from "@material-tailwind/react";
 import "../App.css";
 
 const Experience = () => {
   return (
-    <section id="experience" className={`${genSection} ${doubleCol}`}>
+    <section id="experience" className={`${genSection2} ${doubleCol}`}>
       <div className={`${doubleColTitle} ${headingStyles}`}>Experience</div>
       <div className={`${doubleColInfo}`}>
         {workExp.map((exp) => (
           <div key={exp.id}>
             <h2 className={`text-[25px]`}>{exp.name}</h2>
             <h5 className={`${subTitle}`}>{exp.role}</h5>
-            <div>
-            <li>{exp.description[0]}</li>
-            <li>{exp.description[1]}</li>
-            <li>{exp.description[2]}</li>
-            </div>
-            <h4>{exp.skills}</h4>
+            <ul className="list-disc pl-6">
+              {exp.description.map((desc, index) => (
+                <li key={index} className="py-2">
+                  {desc}
+                </li>
+              ))}
+            </ul>
+            {exp.skills.length > 0 && (
+              <div>
+                <h4>Skills:</h4>
+                <ul className="list-disc pl-6">
+                  {exp.skills.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                  ))}
+                </ul>
+              </div>
+            )}{" "}
           </div>
         ))}
         <div className={`${hoverFont}`}>
           <ExternalLink href="https://docs.google.com/document/d/1bieIblNwM_uVwHCFjP3UY3h9Lp8lq7sPpl74P_WhJIU/edit?usp=sharing">
             <span className="flex items-center">
-              View My Full Resume{" "}
+              View My Full Resume
               <Button
                 size="sm"
                 variant="text"

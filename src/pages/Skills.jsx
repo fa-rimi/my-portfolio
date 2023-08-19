@@ -1,11 +1,11 @@
 /* eslint-disable no-unused-vars */
-import { box, boxStyle, boxHover } from "../constants/styles";
+import { box, boxStyle, boxHover, genSection, genSection2 } from "../constants/styles";
 
 export default function Skills() {
   return (
     <section
       id="skills"
-      className={`w-screen flex flex-col items-center justify-center`}>
+      className={`${genSection2} w-screen flex flex-col items-center justify-center`}>
       <div
         className={`text-[#161B36] w-10/12 flex flex-col items-around border-solid`}>
         <div>
@@ -16,6 +16,9 @@ export default function Skills() {
               <div>
                 <h3>Software</h3>
                 {/* ... software skills content ... */}
+                <ul>
+                  <li></li>
+                </ul>
               </div>
             </div>
 
