@@ -8,9 +8,12 @@ import {
   headingStyles,
   genSection2,
   hoverFont,
-  subTitle,
   clickable,
   expBoxStyle,
+  sameLine,
+  expHeading,
+  expSubtitle,
+  expList,
 } from "../constants/styles";
 import { Button } from "@material-tailwind/react";
 
@@ -30,7 +33,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className={`${genSection2} ${doubleCol} sm:flex-row`}>
+      className={`${genSection2} ${doubleCol}`}>
       <div className={`${doubleColTitle} ${headingStyles}`}>Experience</div>
       <div className={`${doubleColInfo}`}>
         {workExp.map((exp, index) => (
@@ -38,13 +41,13 @@ const Experience = () => {
             key={exp.id}
             onClick={() => toggleExpanded(index)}
             className={`${expBoxStyle} ${clickable}`}>
-            <h2 className="text-[25px]">{exp.name}</h2>
-            <div className="flex flex-row justify-between">
-              <h5 className={`${subTitle}`}>{exp.role}</h5>
-              <h5 className={`${subTitle}`}>{exp.date}</h5>
+            <h2 className={`${expHeading}`}>{exp.name}</h2>
+            <div className={`${sameLine} px-2 py-1`}>
+              <h5 className={`${expSubtitle}`}>{exp.role}</h5>
+              <h5 className={`${expSubtitle}`}>{exp.date}</h5>
             </div>
             {expandedStates[index] && (
-              <ul className="list-disc pl-6">
+              <ul className={`${expList}`}>
                 {exp.description.map((desc, index) => (
                   <li key={index} className="py-2">
                     {desc}
@@ -74,7 +77,19 @@ const Experience = () => {
                 size="sm"
                 variant="text"
                 className="flex items-center gap-2">
-                {/* Add your resume link icon or animation here */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="h-4 w-4">
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
               </Button>
             </span>
           </ExternalLink>
