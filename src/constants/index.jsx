@@ -71,6 +71,7 @@ export const workExp = [
     id: "cffg",
     name: "Change Food For Good",
     role: "Junior Web Developer & Technical Project Manager",
+    date: "Nov 2022 - Present",
     description: [
       "Led a high-performing team of 2 developers in executing full-stack website development projects for grassroots organizations, leveraging APIs to enhance functionality and data integration",
       "Developed and maintained responsive websites using modern tech stack: HTML/CSS, JavaScript, and popular frameworks like Bootstrap and React to create dynamic user interfaces",

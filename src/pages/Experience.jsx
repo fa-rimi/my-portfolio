@@ -23,6 +23,7 @@ const Experience = () => {
           <div key={exp.id}>
             <h2 className={`text-[25px]`}>{exp.name}</h2>
             <h5 className={`${subTitle}`}>{exp.role}</h5>
+            <h5 className={`${subTitle}`}>{exp.date}</h5>
             <ul className="list-disc pl-6">
               {exp.description.map((desc, index) => (
                 <li key={index} className="py-2">
