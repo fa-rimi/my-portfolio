@@ -12,7 +12,7 @@ export const clickable = "cursor-pointer";
 
 // double column
 export const doubleCol = "w-screen flex flex-col md:flex-row";
-export const doubleColTitle = "w-full md:w-5/12";
+export const doubleColTitle = "w-full text-center md:w-5/12";
 export const doubleColInfo = "w-full md:w-6/12 flex flex-col grow";
 export const doubleColDisplay =
   "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9";
