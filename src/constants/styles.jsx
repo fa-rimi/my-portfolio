@@ -11,7 +11,7 @@ export const sameLine = "flex flex-col md:flex-row justify-between"; // when spa
 export const clickable = "cursor-pointer";
 
 // double column
-export const doubleCol = "w-screen flex flex-col min-sm:max-md:flex-row";
+export const doubleCol = "w-screen flex flex-col md:flex-row";
 export const doubleColTitle = "w-5/12";
 export const doubleColInfo = "w-6/12 flex flex-col grow";
 export const doubleColDisplay =
