@@ -20,7 +20,7 @@ export const doubleColDisplay =
 
 // section 
 export const genSection = "w-screen py-[300px]";
-export const genSection2 = "w-screen px-2 lg:py-[220px] lg:px-[50px]";
+export const genSection2 = "w-screen px-2 py-[50px] md:py-[220px] md:px-[50px]";
 export const genSection3 = "";
 
 
