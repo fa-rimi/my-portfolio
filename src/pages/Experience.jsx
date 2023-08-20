@@ -55,7 +55,7 @@ const Experience = () => {
               )}
             </div>
             {expandedStates[index] ? (
-              <>
+              <div>
                 <ul className={`${expList}`}>
                   {exp.description.map((desc, index) => (
                     <li key={index} className={`${raleway} py-2`}>
@@ -66,7 +66,7 @@ const Experience = () => {
                 <div className={`${expSubtitle} ${sameLine} px-4 md:px-2 py-1`}>
                   <p>Skills: {exp.skills}</p>
                 </div>
-              </>
+              </div>
             ) : null}
           </div>
         ))}

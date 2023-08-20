@@ -53,7 +53,7 @@ export const filterFont = "text-[9px] md:text-[15px]";
 export const filterHoverFont = "font-['Cousine'] hover:font-[700] hover:italic px-2 md:px-5";
 // 
 export const doubleColDisplay =
-"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9";
+"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-9";
 // ** Section: Projects =========================== END
 
 
