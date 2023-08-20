@@ -7,7 +7,7 @@ import {
   Button,
 } from "@material-tailwind/react";
 import { techProjects } from "../constants/index";
-import { doubleColDisplay, filter, filterFont, filterHoverFont, hoverFont, raleway } from "../constants/styles";
+import { centeredDoubleColDisplay, doubleColDisplay, filter, filterFont, filterHoverFont, hoverFont, raleway } from "../constants/styles";
 
 const Cards = () => {
   const [data, setData] = useState(techProjects);
@@ -46,7 +46,7 @@ const Cards = () => {
           /In-Progress
         </button>
       </span>
-      <div className={`${doubleColDisplay}`}>
+      <div className={`${doubleColDisplay} ${centeredDoubleColDisplay}`}>
         {data.map((project) => (
           <Card key={project.id} className={` p-10`}>
             <CardHeader>

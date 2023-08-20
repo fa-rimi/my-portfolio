@@ -50,7 +50,7 @@ const Experience = () => {
               <h5 className={`${expSubtitle}`}>{exp.date}</h5>
               </div>
               {!expandedStates[index] && (
-                <div className={`${expSubtitle} px-4 md:px-2 py-3`}>
+                <div className={`${expSubtitle} flex justify-between px-4 md:px-2 py-3`}>
                   <p>Skills: {exp.skills}</p>
                   <ArrowDownLine/>
                 </div>
@@ -67,6 +67,7 @@ const Experience = () => {
                 </ul>
                 <div className={`${expSubtitle} ${sameLine} px-4 md:px-2 py-1`}>
                   <p>Skills: {exp.skills}</p>
+                  <ArrowUpLine/>
                 </div>
               </div>
             ) : null}

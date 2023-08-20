@@ -4,8 +4,8 @@ import My from "../pages/My";
 import Contact from "../pages/Contact";
 import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
-// import Resume from "../pages/Resume";
 import Skills from "../pages/Skills";
+import flipItg from "../assets/flipItg.gif"
 
 // navbar links
 export const navLinks = [
@@ -89,7 +89,7 @@ export const techProjects = [
     type: "Game",
     tech: "",
     link: "",
-    imgURL: "",
+    imgURL: flipItg,
   },
   {
     category: "Design",
