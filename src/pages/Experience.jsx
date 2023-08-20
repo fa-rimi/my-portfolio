@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import { ExternalLink } from "react-external-link";
 import { workExp } from "../constants/index";
@@ -14,6 +15,8 @@ import {
   expHeading,
   expSubtitle,
   expList,
+  raleway,
+  expBoxHover,
 } from "../constants/styles";
 import { Button } from "@material-tailwind/react";
 
@@ -31,48 +34,40 @@ const Experience = () => {
   };
 
   return (
-    <section
-      id="experience"
-      className={`${genSection2} ${doubleCol}`}>
+    <section id="experience" className={`${genSection2} ${doubleCol}`}>
       <div className={`${doubleColTitle} ${headingStyles}`}>Experience</div>
       <div className={`${doubleColInfo}`}>
         {workExp.map((exp, index) => (
           <div
             key={exp.id}
             onClick={() => toggleExpanded(index)}
-            className={`${expBoxStyle} ${clickable}`}>
+            className={`${expBoxStyle} ${expBoxHover} ${clickable}`}>
             <h2 className={`${expHeading}`}>{exp.name}</h2>
             <div className={`${sameLine} px-2 py-1`}>
               <h5 className={`${expSubtitle}`}>{exp.role}</h5>
               <h5 className={`${expSubtitle}`}>{exp.date}</h5>
             </div>
+            <div className={`${expSubtitle} ${sameLine} px-4 md:px-2 py-1`}>
+              <p>Skills: </p>
+              <p>{exp.skills}</p>
+            </div>
             {expandedStates[index] && (
               <ul className={`${expList}`}>
                 {exp.description.map((desc, index) => (
-                  <li key={index} className="py-2">
+                  <li key={index} className={`${raleway} py-2`}>
                     {desc}
                   </li>
                 ))}
               </ul>
             )}
-            {expandedStates[index] && exp.skills.length > 0 && (
-              <div>
-                <h4>Skills:</h4>
-                <ul className="list-disc pl-6">
-                  {exp.skills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
           </div>
         ))}
-        <div className={`${hoverFont}`}>
+        <div className={`w-fit ${hoverFont}`}>
           <ExternalLink
             href="https://docs.google.com/document/d/1bieIblNwM_uVwHCFjP3UY3h9Lp8lq7sPpl74P_WhJIU/edit?usp=sharing"
             target="_blank">
-            <span className="flex items-center">
-              View My Full Resume{" "}
+            <span className="flex items-center text-[15px]">
+              View My Full Resume
               <Button
                 size="sm"
                 variant="text"
