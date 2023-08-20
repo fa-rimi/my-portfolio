@@ -16,7 +16,6 @@ export const clickable = "cursor-pointer";
 export const doubleCol = "w-screen flex flex-col md:flex-row";
 export const doubleColTitle = "w-full text-center md:w-5/12 md:text-left";
 export const doubleColInfo = "w-full md:w-6/12 flex flex-col grow";
-
 // ** General Styling =========================== END
 
 
