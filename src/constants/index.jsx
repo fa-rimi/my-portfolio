@@ -77,16 +77,8 @@ export const workExp = [
       "Developed and maintained responsive websites using modern tech stack: HTML/CSS, JavaScript, and popular frameworks like Bootstrap and React to create dynamic user interfaces",
       "Oversaw the entire project lifecycle, streamlining debugging process by 12% through the identification of test scenarios and creation of comprehensive test plans",
     ],
-    skills: "",
+    skills: "Fullstack, Bootstrap, GitHub, Git, JIRA, Agile",
   },
-  // {
-  //   id: "",
-  //   name: "",
-  //   role: "",
-  //   date: "",
-  //   description: [    ],
-  //   skills: "",
-  // },
 ];
 
 export const techProjects = [

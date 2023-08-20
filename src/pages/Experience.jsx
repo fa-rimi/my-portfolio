@@ -14,6 +14,7 @@ import {
   expHeading,
   expSubtitle,
   expList,
+  raleway,
 } from "../constants/styles";
 import { Button } from "@material-tailwind/react";
 
@@ -31,9 +32,7 @@ const Experience = () => {
   };
 
   return (
-    <section
-      id="experience"
-      className={`${genSection2} ${doubleCol}`}>
+    <section id="experience" className={`${genSection2} ${doubleCol}`}>
       <div className={`${doubleColTitle} ${headingStyles}`}>Experience</div>
       <div className={`${doubleColInfo}`}>
         {workExp.map((exp, index) => (
@@ -46,24 +45,18 @@ const Experience = () => {
               <h5 className={`${expSubtitle}`}>{exp.role}</h5>
               <h5 className={`${expSubtitle}`}>{exp.date}</h5>
             </div>
+            <div className={`${expSubtitle} ${sameLine} px-4 md:px-2 py-1`}>
+              <p>Skills: </p>
+              <p>{exp.skills}</p>
+            </div>
             {expandedStates[index] && (
               <ul className={`${expList}`}>
                 {exp.description.map((desc, index) => (
-                  <li key={index} className="py-2">
+                  <li key={index} className={`${raleway} py-2`}>
                     {desc}
                   </li>
                 ))}
               </ul>
-            )}
-            {expandedStates[index] && exp.skills.length > 0 && (
-              <div>
-                <h4>Skills:</h4>
-                <ul className="list-disc pl-6">
-                  {exp.skills.map((skill, index) => (
-                    <li key={index}>{skill}</li>
-                  ))}
-                </ul>
-              </div>
             )}
           </div>
         ))}
@@ -71,8 +64,8 @@ const Experience = () => {
           <ExternalLink
             href="https://docs.google.com/document/d/1bieIblNwM_uVwHCFjP3UY3h9Lp8lq7sPpl74P_WhJIU/edit?usp=sharing"
             target="_blank">
-            <span className="flex items-center">
-              View My Full Resume{" "}
+            <span className="flex items-center text-[15px]">
+              View My Full Resume
               <Button
                 size="sm"
                 variant="text"

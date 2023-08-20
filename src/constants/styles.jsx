@@ -36,7 +36,7 @@ export const title = "";
 // ** Section: Experience =========================== START
 // card styling experience
 export const expBoxStyle =
-  "w-full lg:w-[750px] border border-[#C6CAC6] rounded p-3 my-2 bg-[#D9DED9] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]";
+  "w-full lg:w-[750px] border-[0.5px] border-[#C6CAC6] rounded p-3 my-2 bg-[#D9DED9] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]";
 // card text styling
 export const expHeading =
   "font-[Raleway] text-[18px] md:text-[25px] font-[600]";
