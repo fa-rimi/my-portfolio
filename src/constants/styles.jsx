@@ -15,7 +15,7 @@ export const clickable = "cursor-pointer";
 // double column
 export const doubleCol = "w-screen flex flex-col md:flex-row";
 export const doubleColTitle = "w-full text-center md:w-5/12 md:text-left";
-export const doubleColInfo = "w-full md:w-6/12 flex grow";
+export const doubleColInfo = "w-full md:w-6/12 flex flex-col grow";
 export const doubleColDisplay =
 "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9";
 // ** General Styling =========================== END
@@ -47,9 +47,10 @@ export const expSubtitle =
 export const expList = "list-disc pl-6";
 // ** Section: Experience =========================== END
 
+
 // ** Section: Projects =========================== START
 export const genSection3 = "w-screen px-2 pb-[50px] md:pb-[220px] md:px-[50px]";
-export const filter = "flex flex-row items-center md:items-center my-[30px]";
+export const filter = "flex flex-row my-[30px]";
 export const filterFont = "text-[9px] md:text-[15px]";
 export const filterHoverFont = "font-['Cousine'] hover:font-[700] hover:italic px-5";
 // ** Section: Projects =========================== END
