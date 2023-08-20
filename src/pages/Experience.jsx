@@ -19,6 +19,7 @@ import {
   expBoxHover,
 } from "../constants/styles";
 import { Button } from "@material-tailwind/react";
+import { ArrowRightLine, ArrowDownLine, ArrowUpLine } from "@rsuite/icons";
 
 const Experience = () => {
   // Create an array of states, one for each experience section
@@ -51,6 +52,7 @@ const Experience = () => {
               {!expandedStates[index] && (
                 <div className={`${expSubtitle} px-4 md:px-2 py-3`}>
                   <p>Skills: {exp.skills}</p>
+                  <ArrowDownLine/>
                 </div>
               )}
             </div>
@@ -80,7 +82,8 @@ const Experience = () => {
                 size="sm"
                 variant="text"
                 className="flex items-center gap-2">
-                <svg
+                  <ArrowRightLine/>
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -92,7 +95,7 @@ const Experience = () => {
                     strokeLinejoin="round"
                     d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                   />
-                </svg>
+                </svg> */}
               </Button>
             </span>
           </ExternalLink>
