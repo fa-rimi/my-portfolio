@@ -3,12 +3,13 @@
 export const raleway = "font-[Raleway]";
 export const cousine = "font-[Cousine]";
 export const hoverFont = "font-['Cousine'] hover:font-[700] hover:italic px-4";
-export const headingStyles = "text-[50px] tracking-[2px] md:text-[70px] font-semibold md:mb-4";
+export const headingStyles =
+  "text-[50px] tracking-[2px] md:text-[70px] font-semibold md:mb-4";
 
 // positioning
 export const sameLine = "flex flex-col md:flex-row justify-between"; // when span doesn't work
 
-// button 
+// button
 export const clickable = "cursor-pointer";
 
 // double column
@@ -18,11 +19,10 @@ export const doubleColInfo = "w-full md:w-6/12 flex flex-col grow";
 export const doubleColDisplay =
   "grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9";
 
-// section 
+// section
 export const genSection = "w-screen py-[300px]";
 export const genSection2 = "w-screen px-2 py-[50px] md:py-[220px] md:px-[50px]";
-export const genSection3 = "";
-
+export const genSection3 = "w-screen px-2 pb-[50px] md:pb-[220px] md:px-[50px]";
 
 export const responsiveSingleRow = "sm:w-screen flex flex-col";
 
@@ -36,7 +36,8 @@ export const title = "";
 // ** Section: Experience =========================== START
 // card styling experience
 export const expBoxStyle =
-  "w-full lg:w-[750px] border-[0.5px] border-[#C6CAC6] rounded p-3 my-2 bg-[#D9DED9] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]";
+  "w-full lg:w-[750px] border-[0.5px] border-[#C6CAC6] rounded p-3 my-5 bg-[#D9DED9] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]";
+export const expBoxHover = "hover:shadow-[1px_7px_21px_11px_#676142C6] transition-shadow duration-500 ease-in-out";
 // card text styling
 export const expHeading =
   "font-[Raleway] text-[18px] md:text-[25px] font-[600]";

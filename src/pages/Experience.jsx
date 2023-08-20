@@ -16,6 +16,7 @@ import {
   expSubtitle,
   expList,
   raleway,
+  expBoxHover,
 } from "../constants/styles";
 import { Button } from "@material-tailwind/react";
 
@@ -40,7 +41,7 @@ const Experience = () => {
           <div
             key={exp.id}
             onClick={() => toggleExpanded(index)}
-            className={`${expBoxStyle} ${clickable}`}>
+            className={`${expBoxStyle} ${expBoxHover} ${clickable}`}>
             <h2 className={`${expHeading}`}>{exp.name}</h2>
             <div className={`${sameLine} px-2 py-1`}>
               <h5 className={`${expSubtitle}`}>{exp.role}</h5>
@@ -61,7 +62,7 @@ const Experience = () => {
             )}
           </div>
         ))}
-        <div className={`${hoverFont}`}>
+        <div className={`w-fit ${hoverFont}`}>
           <ExternalLink
             href="https://docs.google.com/document/d/1bieIblNwM_uVwHCFjP3UY3h9Lp8lq7sPpl74P_WhJIU/edit?usp=sharing"
             target="_blank">
