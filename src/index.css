@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+:root {
+    --bg-color-primary: '#10143A';
+    --text-color-light-main: '#F2F7F2';
+
+    background: #F2F7F2;
+    color: #161B36;
+}
+
 .shrink {
     width: 100vw;
     transition: all 0.5s;
