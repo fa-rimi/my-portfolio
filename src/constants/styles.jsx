@@ -16,7 +16,6 @@ export const clickable = "cursor-pointer";
 export const doubleCol = "w-screen flex flex-col md:flex-row";
 export const doubleColTitle = "w-full text-center md:w-5/12 md:text-left";
 export const doubleColInfo = "w-full md:w-6/12 flex flex-col grow";
-
 // ** General Styling =========================== END
 
 
@@ -54,7 +53,7 @@ export const filterFont = "text-[9px] md:text-[15px]";
 export const filterHoverFont = "font-['Cousine'] hover:font-[700] hover:italic px-2 md:px-5";
 // 
 export const doubleColDisplay =
-"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9";
+"grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-9";
 // ** Section: Projects =========================== END
 
 

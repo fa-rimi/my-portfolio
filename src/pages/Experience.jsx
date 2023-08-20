@@ -43,23 +43,31 @@ const Experience = () => {
             onClick={() => toggleExpanded(index)}
             className={`${expBoxStyle} ${expBoxHover} ${clickable}`}>
             <h2 className={`${expHeading}`}>{exp.name}</h2>
-            <div className={`${sameLine} px-2 py-1`}>
+            <div className={`px-2 py-1`}>
+              <div className={`${sameLine}`}>
               <h5 className={`${expSubtitle}`}>{exp.role}</h5>
               <h5 className={`${expSubtitle}`}>{exp.date}</h5>
+              </div>
+              {!expandedStates[index] && (
+                <div className={`${expSubtitle} px-4 md:px-2 py-3`}>
+                  <p>Skills: {exp.skills}</p>
+                </div>
+              )}
             </div>
-            <div className={`${expSubtitle} ${sameLine} px-4 md:px-2 py-1`}>
-              <p>Skills: </p>
-              <p>{exp.skills}</p>
-            </div>
-            {expandedStates[index] && (
-              <ul className={`${expList}`}>
-                {exp.description.map((desc, index) => (
-                  <li key={index} className={`${raleway} py-2`}>
-                    {desc}
-                  </li>
-                ))}
-              </ul>
-            )}
+            {expandedStates[index] ? (
+              <div>
+                <ul className={`${expList}`}>
+                  {exp.description.map((desc, index) => (
+                    <li key={index} className={`${raleway} py-2`}>
+                      {desc}
+                    </li>
+                  ))}
+                </ul>
+                <div className={`${expSubtitle} ${sameLine} px-4 md:px-2 py-1`}>
+                  <p>Skills: {exp.skills}</p>
+                </div>
+              </div>
+            ) : null}
           </div>
         ))}
         <div className={`w-fit ${hoverFont}`}>
