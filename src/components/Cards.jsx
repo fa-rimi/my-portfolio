@@ -4,12 +4,10 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
-  Tooltip,
   Button,
 } from "@material-tailwind/react";
 import { techProjects } from "../constants/index";
-import { box, hoverFont } from "../constants/styles";
+import { doubleColDisplay, filter, filterFont, filterHoverFont, hoverFont, raleway } from "../constants/styles";
 
 const Cards = () => {
   const [data, setData] = useState(techProjects);
@@ -21,36 +19,36 @@ const Cards = () => {
   };
   return (
     <div>
-      <span className="font-['Raleway'] font-[500]">
+      <span className={`${raleway} ${filter} ${filterFont}`}>
         Filter by
         <button
           type="button"
           onClick={() => setData(techProjects)}
-          className={`${hoverFont}`}>
+          className={`${filterHoverFont}`}>
           /All
         </button>
         <button
           type="button"
           onClick={() => filterProjects("Design")}
-          className={`${hoverFont}`}>
+          className={`${filterHoverFont}`}>
           /Design
         </button>
         <button
           type="button"
           onClick={() => filterProjects("Develop")}
-          className={`${hoverFont}`}>
+          className={`${filterHoverFont}`}>
           /Develop
         </button>
         <button
           type="button"
           onClick={() => filterProjects("In-Progress")}
-          className={`${hoverFont}`}>
+          className={`${filterHoverFont}`}>
           /In-Progress
         </button>
       </span>
-      <div>
+      <div className={`${doubleColDisplay}`}>
         {data.map((project) => (
-          <Card key={project.id} className={`${box} p-10`}>
+          <Card key={project.id} className={` p-10`}>
             <CardHeader>
               <img src="https://placehold.co/300" />
             </CardHeader>

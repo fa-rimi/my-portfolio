@@ -5,23 +5,17 @@ import {
   doubleCol,
   doubleColTitle,
   doubleColInfo,
-  doubleColDisplay,
   headingStyles,
-  responsiveSingleRow,
   genSection3,
 } from "../constants/styles";
 import Cards from "../components/Cards";
 
 const Projects = () => {
   return (
-    <section id="projects" className={`${genSection3} flex flex-row sm:flex-col `}>
-      <div className={`${doubleCol}`}>
-        <div className={`${doubleColTitle}`}>
-          <div className={`${headingStyles}`}>Projects</div>
-        </div>
-        <div>
-          <Cards className={``}/>
-        </div>
+    <section id="projects" className={`${genSection3} ${doubleCol}`}>
+      <div className={`${doubleColTitle} ${headingStyles}`}>Projects</div>
+      <div className={`${doubleColInfo}`}>
+        <Cards className={``} />
       </div>
     </section>
   );
