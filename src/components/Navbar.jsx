@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { navLinks } from "../constants/index";
-import { clickable, hoverFont, navbarStyle } from "../constants/styles";
+import { clickable, hoverFont, navbarPositioning, navbarStyle, shrink } from "../constants/styles";
 
 const Navbar = () => {
   const [isNavShrunk, setIsNavShrunk] = useState(false);
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div className="w-screen">
       <nav
-        className={`fixed top-0 z-10 w-screen flex justify-center items-center scroll-smooth ${
+        className={`${navbarPositioning} ${
           isNavShrunk ? "shrink" : ""
         }`}>
         <ul className={`${navbarStyle}`}>

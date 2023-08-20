@@ -21,6 +21,7 @@ export const doubleColInfo = "w-full md:w-6/12 flex flex-col grow";
 
 // ** Section: Navbar =========================== START
 export const navbarStyle = "w-screen py-10 px-20 sm:flex hidden justify-evenly items-center";
+export const navbarPositioning = "fixed top-0 z-10 w-screen flex justify-center items-center scroll-smooth";
 export const shrink =
 "w-screen transition-transform duration-500 transform scale-80 hover:scale-100 py-2 px-0 bg-opacity-90 bg-white hover:bg-opacity-100 hover:shadow-md";
 // ** Section: Navbar =========================== END
