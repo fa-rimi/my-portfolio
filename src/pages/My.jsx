@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { genSection } from "../constants/styles";
-import smiley from "../assets/smiley.jpeg";
+import groovy_background from "../assets/groovy_background.jpeg";
 
 const My = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -23,7 +23,7 @@ const My = () => {
       id="my"
       className={`${genSection}`}
       style={{
-        backgroundImage: `url(${smiley})`,
+        backgroundImage: `url(${groovy_background})`,
         backgroundAttachment: "fixed",
         backgroundPosition: "",
         backgroundRepeat: "repeat",
