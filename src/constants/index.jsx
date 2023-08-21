@@ -42,24 +42,38 @@ export const navLinks = [
   // },
 ];
 
-// export const responsiveNavLinks = [
-//   {
-//     id: "skills",
-//     title: "// skills",
-//   },
-//   {
-//     id: "experience",
-//     title: "// experience",
-//   },
-//   {
-//     id: "contact",
-//     title: "// contact",
-//   },
-//   {
-//     id: "resume",
-//     title: "// resume",
-//   },
-// ];
+export const techSkills = [
+  {
+    category: "",
+    id: "html",
+    skills: "HTML",
+  },
+  {
+    category: "",
+    id: "css",
+    skills: "CSS",
+  },
+  {
+    category: "",
+    id: "js",
+    skills: "JavaScript",
+  },
+  {
+    category: "",
+    id: "r-js",
+    skills: "React JS",
+  },
+  {
+    category: "",
+    id: "r-js",
+    skills: "React JS",
+  },
+  {
+    category: "",
+    id: "r-js",
+    skills: "React JS",
+  },
+]
 
 export const workExp = [
   {

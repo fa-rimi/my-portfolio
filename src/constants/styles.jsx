@@ -31,8 +31,12 @@ export const shrink =
 export const genSection = "w-screen py-[300px]";
 // ** Section: My =========================== END
 
+// ** Section: Skills =========================== START
+export const skills = "w-screen py-[200px]";
+// ** Section: Skills =========================== END
+
 // ** Section: Experience =========================== START
-export const genSection2 = "w-screen px-2 py-[50px] md:pb-[140px] md:px-[50px]";
+export const genSection2 = "w-screen px-2 py-[50px] md:pt-[100px] md:pb-[140px] md:px-[50px]";
 // card styling experience
 export const expBoxStyle =
   "w-full lg:w-[800px] border-[0.5px] border-[#C6CAC6] rounded p-3 my-5 bg-[#D9DED9] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]";
