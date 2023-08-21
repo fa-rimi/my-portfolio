@@ -11,6 +11,7 @@
 <li>Filter projects by project type
 <li>Contact with external mailing link
 <li>Expand toggle to show experience details 
+<li>Dad joke API that times out after a few seconds
 </ul>
 
 <h3>The Process: </h3>
