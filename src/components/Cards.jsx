@@ -30,11 +30,12 @@ const Cards = () => {
   // Function to filter projects by category
   const filterProjects = (catItem) => {
     // Use the filter method to create a new array containing projects that match the selected category
+    // The filter method is an array method that creates a new array containing elements that meet certain criteria
     const result = techProjects.filter((current) => {
       return current.category === catItem;
     });
 
-    // Update the 'data' state with the filtered results, effectively changing the displayed projects
+    // Update the 'data' state with the filtered results, component re-renders, and the list of displayed projects changes to include only those that match the selected category
     setData(result);
   };
 
