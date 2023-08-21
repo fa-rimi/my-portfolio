@@ -49,7 +49,7 @@ const Experience = () => {
         {/* Map over the workExp array and render each work experience section */}
         {workExp.map((exp, index) => (
           <div
-            key={exp.id} // Use a unique key for each section (assuming exp.id is unique)
+            key={exp.id} // Use a unique key for each section
             onClick={() => toggleExpanded(index)} // Call toggleExpanded when clicked
             className={`${expBoxStyle} ${expBoxHover} ${clickable}`}>
             {/* Display the name of the work experience */}
