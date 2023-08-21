@@ -5,7 +5,6 @@ import My from "./pages/My";
 import Skills from "./pages/Skills";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
 import Footer from "./pages/Footer"; 
 
 const App = () => {
@@ -17,7 +16,6 @@ const App = () => {
         <Skills />
         <Experience />
         <Projects />
-        <Contact />
         <Footer />
       </div>
     </div>

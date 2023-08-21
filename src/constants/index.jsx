@@ -1,7 +1,6 @@
 // Anything that wont change on the page
 
 import My from "../pages/My";
-import Contact from "../pages/Contact";
 import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
@@ -34,12 +33,6 @@ export const navLinks = [
     title: "/projects",
     path: "/projects",
     component: Projects,
-  },
-  {
-    id: "contact",
-    title: "/contact",
-    path: "/contact",
-    component: Contact,
   },
   // {
   //   id: "resume",
