@@ -9,8 +9,7 @@ export default function Skills() {
       <div
         className={`text-[#161B36] w-10/12 flex flex-col items-around border-solid`}>
         <div>
-          {/* Use grid with responsive columns */}
-          <div className="">
+          <div>
             {/* Software */}
             <div className={``}>
               <div>
