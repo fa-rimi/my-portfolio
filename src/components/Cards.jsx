@@ -8,6 +8,7 @@ import {
   filter,
   filterFont,
   filterHoverFont,
+  hoverFont,
   projectBoxHover,
   projectBoxStyle,
   projectContent,
@@ -62,7 +63,7 @@ const Cards = () => {
             key={project.id}
             className={`${projectBoxStyle} ${projectBoxHover} ${clickable} flex flex-row`}>
             <CardHeader>
-              <img src={project.imgURL} className={`${projectImgs}`}/>
+              <img src={project.imgURL} className={`${projectImgs}`} />
             </CardHeader>
             <CardBody className={`${projectContent}`}>
               <ExternalLink href={project.link}>
@@ -82,6 +83,21 @@ const Cards = () => {
             {/* <CardFooter className="pt-0"></CardFooter> */}
           </Card>
         ))}
+        <div className={`w-fit pl-3 ${hoverFont}`}>
+          <ExternalLink
+            href=""
+            target="_blank">
+            <span className="flex items-center text-[15px]">
+              Project Archive Coming Soon
+              <Button
+                size="sm"
+                variant="text"
+                className="flex items-center">
+                <ArrowRightLine />
+              </Button>
+            </span>
+          </ExternalLink>
+        </div>
       </div>
     </div>
   );
