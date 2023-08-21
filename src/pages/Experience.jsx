@@ -22,6 +22,7 @@ import {
 } from "../constants/styles"; // Import CSS classes and styles
 import { Button } from "@material-tailwind/react"; // Import a button component
 import { ArrowRightLine, ArrowDownLine, ArrowUpLine } from "@rsuite/icons"; // Import arrow icons from the RSuite library
+import Fatima_Rimi from "../assets/Fatima_Rimi.pdf"
 
 // Define the Experience component
 const Experience = () => {
@@ -91,7 +92,7 @@ const Experience = () => {
         {/* Render a link to view the full resume */}
         <div className={`w-fit pl-3 ${hoverFont}`}>
           <ExternalLink
-            href="https://docs.google.com/document/d/1bieIblNwM_uVwHCFjP3UY3h9Lp8lq7sPpl74P_WhJIU/edit?usp=sharing" // Link to the full resume
+            href={Fatima_Rimi} // Link to the full resume
             target="_blank" // Open in a new tab
           >
             <span className="flex items-center text-[15px]">
