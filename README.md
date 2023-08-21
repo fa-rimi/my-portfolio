@@ -19,7 +19,7 @@
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 " alt="React.js" width="140px">
 <img src="https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E
-" alt="React.js" width="140px">
+" alt="Vite" width="140px">
 <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwinds" width="230px">
 <a href="https://open.spotify.com/album/3uPOSDtQ4ZX6NbHhdIzESH?si=zM_Ape8gTUOc2HIlp7ufrg"><img src="https://img.shields.io/badge/Work Mode-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" alt="The Playlist That Helped Me Grind" width="190px"></a>
 </span>
