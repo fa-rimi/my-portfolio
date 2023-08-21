@@ -1,13 +1,19 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Button,
-} from "@material-tailwind/react";
+import { Card, CardHeader, CardBody, Button } from "@material-tailwind/react";
 import { techProjects } from "../constants/index";
-import { centeredDoubleColDisplay, doubleColDisplay, filter, filterFont, filterHoverFont, hoverFont, raleway } from "../constants/styles";
+import {
+  clickable,
+  doubleColInfo,
+  filter,
+  filterFont,
+  filterHoverFont,
+  projectBoxHover,
+  projectBoxStyle,
+  raleway,
+} from "../constants/styles";
+import { ArrowRightLine, ArrowDownLine, ArrowUpLine } from "@rsuite/icons";
+import { ExternalLink } from "react-external-link";
 
 const Cards = () => {
   const [data, setData] = useState(techProjects);
@@ -46,33 +52,23 @@ const Cards = () => {
           /In-Progress
         </button>
       </span>
-      <div className={`${doubleColDisplay} ${centeredDoubleColDisplay}`}>
+      <div className={`${doubleColInfo}`}>
         {data.map((project) => (
-          <Card key={project.id} className={` p-10`}>
+          <Card
+            key={project.id}
+            className={`${projectBoxStyle} ${projectBoxHover} ${clickable} p-10`}>
             <CardHeader>
-              <img src="https://placehold.co/300" />
+              <img src={project.imgURL} />
             </CardHeader>
             <CardBody>
-              <span className="flex flex-row justify-between items-center">
-                <h2>{project.name}</h2>
-                <a href="#">
+              <ExternalLink href={project.link}>
+                <span className="flex flex-row justify-between items-center">
+                  <h2>{project.name}</h2>
                   <Button
                     size="sm"
                     variant="text"
                     className="flex items-center gap-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={2}
-                      stroke="currentColor"
-                      className="h-4 w-4">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                      />
-                    </svg>
+                    <ArrowRightLine />
                     {/* <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
                 <lord-icon
                   src="https://cdn.lordicon.com/zmkotitn.json"
@@ -80,8 +76,8 @@ const Cards = () => {
                   colors="primary:#121331"
                   style="width:250px;height:250px"></lord-icon> */}
                   </Button>
-                </a>
-              </span>
+                </span>
+              </ExternalLink>
             </CardBody>
             {/* <CardFooter className="pt-0"></CardFooter> */}
           </Card>

@@ -1,6 +1,5 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import { techProjects } from "../constants";
 import {
   doubleCol,
   doubleColTitle,
