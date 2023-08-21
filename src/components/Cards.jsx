@@ -29,9 +29,12 @@ const Cards = () => {
 
   // Function to filter projects by category
   const filterProjects = (catItem) => {
+    // Use the filter method to create a new array containing projects that match the selected category
     const result = techProjects.filter((current) => {
       return current.category === catItem;
     });
+
+    // Update the 'data' state with the filtered results, effectively changing the displayed projects
     setData(result);
   };
 
@@ -40,27 +43,31 @@ const Cards = () => {
       {/* Filter buttons */}
       <span className={`${raleway} ${filter} ${filterFont}`}>
         Filter by
+        {/* Reset button to show all projects */}
         <button
           type="button"
-          onClick={() => setData(techProjects)} // Reset to show all projects
+          onClick={() => setData(techProjects)} // When clicked, reset to show all projects
           className={`${filterHoverFont}`}>
           /All
         </button>
+        {/* Filter button for "Design" category */}
         <button
           type="button"
-          onClick={() => filterProjects("Design")} // Filter by Design category
+          onClick={() => filterProjects("Design")} // When clicked, filter by "Design" category
           className={`${filterHoverFont}`}>
           /Design
         </button>
+        {/* Filter button for "Develop" category */}
         <button
           type="button"
-          onClick={() => filterProjects("Develop")} // Filter by Develop category
+          onClick={() => filterProjects("Develop")} // When clicked, filter by "Develop" category
           className={`${filterHoverFont}`}>
           /Develop
         </button>
+        {/* Filter button for "In-Progress" category */}
         <button
           type="button"
-          onClick={() => filterProjects("In-Progress")} // Filter by In-Progress category
+          onClick={() => filterProjects("In-Progress")} // When clicked, filter by "In-Progress" category
           className={`${filterHoverFont}`}>
           /In-Progress
         </button>
