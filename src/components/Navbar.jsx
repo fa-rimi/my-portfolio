@@ -1,6 +1,13 @@
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { navLinks } from "../constants/index";
-import { clickable, hoverFont, navbarPositioning, navbarStyle, shrink } from "../constants/styles";
+import {
+  clickable,
+  hoverFont,
+  navbarPositioning,
+  navbarStyle,
+  shrink,
+} from "../constants/styles";
 
 const Navbar = () => {
   const [isNavShrunk, setIsNavShrunk] = useState(false);
@@ -19,10 +26,7 @@ const Navbar = () => {
 
   return (
     <div className="w-screen">
-      <nav
-        className={`${navbarPositioning} ${
-          isNavShrunk ? "shrink" : ""
-        }`}>
+      <nav className={`${navbarPositioning} ${isNavShrunk ? "shrink" : ""}`}>
         <ul className={`${navbarStyle}`}>
           {navLinks.map((nav) => (
             <li
@@ -37,10 +41,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        <div>
-          {/* <img alt="Logo"></img> */}
-        </div>
       </nav>
     </div>
   );
