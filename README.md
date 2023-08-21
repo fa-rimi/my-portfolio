@@ -41,6 +41,7 @@ https://far-portfolio.netlify.app/
 <h3>Next Steps: </h3>
 <ul>
 <li>Individual page and timeline per project
+<li>Link to live age if applicable 
 <li>Project archive page
 <li>Changing the skills section
 <li>Mobile and tablet responsiveness
