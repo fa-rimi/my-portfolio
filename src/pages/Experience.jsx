@@ -1,10 +1,10 @@
 // Import necessary modules and components
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
-import { ExternalLink } from "react-external-link";
-import { workExp } from "../constants/index";
+import { ExternalLink } from "react-external-link"; // Import the ExternalLink component for external links
+import { workExp } from "../constants/index"; // Import work experience data
 import {
-  // Import various styles and CSS classes
+  // Import various styles and CSS classes from a styles module
   doubleCol,
   doubleColTitle,
   doubleColInfo,
@@ -19,9 +19,9 @@ import {
   expList,
   raleway,
   expBoxHover,
-} from "../constants/styles";
-import { Button } from "@material-tailwind/react";
-import { ArrowRightLine, ArrowDownLine, ArrowUpLine } from "@rsuite/icons";
+} from "../constants/styles"; // Import CSS classes and styles
+import { Button } from "@material-tailwind/react"; // Import a button component
+import { ArrowRightLine, ArrowDownLine, ArrowUpLine } from "@rsuite/icons"; // Import arrow icons from the RSuite library
 
 // Define the Experience component
 const Experience = () => {
@@ -32,25 +32,31 @@ const Experience = () => {
 
   // Function to toggle the expanded state of a specific section
   const toggleExpanded = (index) => {
+    // Create a new array of expandedStates based on the current state
     const newExpandedStates = [...expandedStates];
+    // Toggle the state at the specified index (expand if collapsed, collapse if expanded)
     newExpandedStates[index] = !newExpandedStates[index];
+    // Update the expandedStates state with the new array
     setExpandedStates(newExpandedStates);
   };
 
   return (
     // Render the Experience section
     <section id="experience" className={`${genSection2} ${doubleCol}`}>
+      {/* Title of the Experience section */}
       <div className={`${doubleColTitle} ${headingStyles}`}>Experience</div>
       <div className={`${doubleColInfo}`}>
         {/* Map over the workExp array and render each work experience section */}
         {workExp.map((exp, index) => (
           <div
-            key={exp.id}
-            onClick={() => toggleExpanded(index)}
+            key={exp.id} // Use a unique key for each section (assuming exp.id is unique)
+            onClick={() => toggleExpanded(index)} // Call toggleExpanded when clicked
             className={`${expBoxStyle} ${expBoxHover} ${clickable}`}>
+            {/* Display the name of the work experience */}
             <h2 className={`${expHeading}`}>{exp.name}</h2>
             <div className={`px-2 py-1`}>
               <div className={`${sameLine}`}>
+                {/* Display the role and date in the same line */}
                 <h5 className={`${expSubtitle}`}>{exp.role}</h5>
                 <h5 className={`${expSubtitle}`}>{exp.date}</h5>
               </div>
@@ -59,7 +65,7 @@ const Experience = () => {
                 <div
                   className={`${expSubtitle} flex justify-between px-4 md:px-2 py-3`}>
                   <p>Skills: {exp.skills}</p>
-                  <ArrowDownLine />
+                  <ArrowDownLine /> {/* Down arrow icon */}
                 </div>
               )}
             </div>
@@ -67,6 +73,7 @@ const Experience = () => {
             {expandedStates[index] ? (
               <div>
                 <ul className={`${expList}`}>
+                  {/* Map over the description array and display each item */}
                   {exp.description.map((desc, index) => (
                     <li key={index} className={`${raleway} py-2`}>
                       {desc}
@@ -75,7 +82,7 @@ const Experience = () => {
                 </ul>
                 <div className={`${expSubtitle} ${sameLine} px-4 md:px-2 py-1`}>
                   <p>Skills: {exp.skills}</p>
-                  <ArrowUpLine />
+                  <ArrowUpLine /> {/* Up arrow icon */}
                 </div>
               </div>
             ) : null}
@@ -84,12 +91,13 @@ const Experience = () => {
         {/* Render a link to view the full resume */}
         <div className={`w-fit pl-3 ${hoverFont}`}>
           <ExternalLink
-            href="https://docs.google.com/document/d/1bieIblNwM_uVwHCFjP3UY3h9Lp8lq7sPpl74P_WhJIU/edit?usp=sharing"
-            target="_blank">
+            href="https://docs.google.com/document/d/1bieIblNwM_uVwHCFjP3UY3h9Lp8lq7sPpl74P_WhJIU/edit?usp=sharing" // Link to the full resume
+            target="_blank" // Open in a new tab
+          >
             <span className="flex items-center text-[15px]">
               View My Full Resume
               <Button size="sm" variant="text" className="flex items-center">
-                <ArrowRightLine />
+                <ArrowRightLine /> {/* Right arrow icon */}
               </Button>
             </span>
           </ExternalLink>
