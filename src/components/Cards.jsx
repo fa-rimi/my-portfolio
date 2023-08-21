@@ -10,6 +10,7 @@ import {
   filterHoverFont,
   projectBoxHover,
   projectBoxStyle,
+  projectImgs,
   raleway,
 } from "../constants/styles";
 import { ArrowRightLine, ArrowDownLine, ArrowUpLine } from "@rsuite/icons";
@@ -56,9 +57,9 @@ const Cards = () => {
         {data.map((project) => (
           <Card
             key={project.id}
-            className={`${projectBoxStyle} ${projectBoxHover} ${clickable} p-10`}>
+            className={`${projectBoxStyle} ${projectBoxHover} ${clickable} flex flex-row`}>
             <CardHeader>
-              <img src={project.imgURL} />
+              <img src={project.imgURL} className={`${projectImgs}`}/>
             </CardHeader>
             <CardBody>
               <ExternalLink href={project.link}>

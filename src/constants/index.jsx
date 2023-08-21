@@ -6,6 +6,7 @@ import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import flipItg from "../assets/flipItg.gif"
+import aotny_splash from "../assets/aotny_splash.png"
 
 // navbar links
 export const navLinks = [
@@ -107,7 +108,7 @@ export const techProjects = [
     type: "Web Development",
     tech: "",
     link: "",
-    imgURL: "",
+    imgURL: aotny_splash,
   },
   // {
   //   id: "",
