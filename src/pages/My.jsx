@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from "react";
 import { genSection } from "../constants/styles";
 import groovy_background from "../assets/groovy_background.jpeg";
