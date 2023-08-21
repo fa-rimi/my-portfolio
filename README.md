@@ -8,7 +8,7 @@
 
 <h3>Aspect: </h3>
 <ul>
-<li>
+<li>Filter projects by project type
 </ul>
 
 <h3>The Process: </h3>
