@@ -11,7 +11,7 @@ import {
 
 const Navbar = () => {
   const [isNavShrunk, setIsNavShrunk] = useState(false);
-  const [active, setActive] = useState("Home");
+  const [active, setActive] = useState("");
   const isMobile = window.innerWidth <= 640; // Adjust this breakpoint as needed
 
   const handleScroll = () => {
