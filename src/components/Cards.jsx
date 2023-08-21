@@ -10,8 +10,10 @@ import {
   filterHoverFont,
   projectBoxHover,
   projectBoxStyle,
+  projectContent,
   projectHeading,
   projectImgs,
+  projectSubtitle,
   raleway,
 } from "../constants/styles";
 import { ArrowRightLine, ArrowDownLine, ArrowUpLine } from "@rsuite/icons";
@@ -62,9 +64,9 @@ const Cards = () => {
             <CardHeader>
               <img src={project.imgURL} className={`${projectImgs}`}/>
             </CardHeader>
-            <CardBody>
+            <CardBody className={`${projectContent}`}>
               <ExternalLink href={project.link}>
-                <span className="flex flex-row justify-between items-center">
+                <span className="flex flex-row justify-between">
                   <h2 className={`${projectHeading}`}>{project.name}</h2>
                   <Button
                     size="sm"
@@ -74,7 +76,8 @@ const Cards = () => {
                   </Button>
                 </span>
               </ExternalLink>
-              <h4></h4>
+              <h4 className={`${projectSubtitle}`}>{project.skills}</h4>
+              <h4 className={`${projectSubtitle}`}>{project.date}</h4>
             </CardBody>
             {/* <CardFooter className="pt-0"></CardFooter> */}
           </Card>

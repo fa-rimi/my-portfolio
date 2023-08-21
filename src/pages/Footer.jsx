@@ -71,6 +71,16 @@ const Footer = () => {
             </a>
           </li>
         </Tooltip>
+        <Tooltip content="Email" className="text-[10px] text-center">
+          <li>
+            <a
+              href="mailto:a.fatimaarimi@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              <img width="29" height="29" src="https://img.icons8.com/ios-glyphs/30/FFFFFF/new-post.png" alt="Email"/>
+            </a>
+          </li>
+        </Tooltip>
       </ul>
       <Tooltip
         content="i have limited api calls please don't refresh"

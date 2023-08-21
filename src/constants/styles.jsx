@@ -59,11 +59,12 @@ export const projectBoxStyle =
 export const projectBoxHover =
   "hover:shadow-[1px_7px_12px_7px_#676142C6] transition-shadow duration-500 ease-in-out";
 // card text styling
+export const projectContent = "w-full p-5 md:p-5";
 export const projectHeading =
   "font-[Raleway] text-[18px] md:text-[25px] font-[600]";
 export const projectSubtitle =
-  "font-[Cousine] font-thin text-[11px] md:text-[14px] text-[#222831]";
-export const projectImgs = "w-[300px] rounded";
+  "font-[Cousine] font-thin text-[11px] md:text-[14px] text-[#222831] pl-2 pt-1";
+export const projectImgs = "w-[400px] rounded";
 // ** Section: Projects =========================== END
 
 export const box = "border border-black p-4 h-[250px] text-center";
