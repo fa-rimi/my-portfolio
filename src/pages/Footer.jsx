@@ -20,7 +20,7 @@ const Footer = () => {
     try {
       const response = await fetch(apiURL, options); // Sending an API request using the fetch and wait
       const data = await response.json(); // Parse the JSON data and wait for it to process
-      setJoke(data[0].joke);
+      setJoke(data[0].joke); // Extract the first joke 
     } catch (error) {
       console.error(error);
     }
