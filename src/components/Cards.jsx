@@ -10,6 +10,7 @@ import {
   filterHoverFont,
   projectBoxHover,
   projectBoxStyle,
+  projectHeading,
   projectImgs,
   raleway,
 } from "../constants/styles";
@@ -64,21 +65,16 @@ const Cards = () => {
             <CardBody>
               <ExternalLink href={project.link}>
                 <span className="flex flex-row justify-between items-center">
-                  <h2>{project.name}</h2>
+                  <h2 className={`${projectHeading}`}>{project.name}</h2>
                   <Button
                     size="sm"
                     variant="text"
                     className="flex items-center gap-2">
                     <ArrowRightLine />
-                    {/* <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                <lord-icon
-                  src="https://cdn.lordicon.com/zmkotitn.json"
-                  trigger="hover"
-                  colors="primary:#121331"
-                  style="width:250px;height:250px"></lord-icon> */}
                   </Button>
                 </span>
               </ExternalLink>
+              <h4></h4>
             </CardBody>
             {/* <CardFooter className="pt-0"></CardFooter> */}
           </Card>

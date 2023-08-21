@@ -7,6 +7,7 @@ import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import flipItg from "../assets/flipItg.gif"
 import aotny_splash from "../assets/aotny_splash.png"
+import bbb from "../assets/bbb.png"
 
 // navbar links
 export const navLinks = [
@@ -99,7 +100,7 @@ export const techProjects = [
     type: "Branding & Design",
     tech: "",
     link: "",
-    imgURL: "",
+    imgURL: bbb,
   },
   {
     category: "Develop",
