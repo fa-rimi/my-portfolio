@@ -12,6 +12,7 @@ import {
 const Navbar = () => {
   const [isNavShrunk, setIsNavShrunk] = useState(false);
   const [active, setActive] = useState("Home");
+  const isMobile = window.innerWidth <= 640; // Adjust this breakpoint as needed
 
   const handleScroll = () => {
     setIsNavShrunk(window.scrollY > 0);
@@ -26,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className="w-screen">
-      <nav className={`${navbarPositioning} ${isNavShrunk ? "shrink" : ""}`}>
+      <nav  className={`${navbarPositioning} ${isMobile ? '' : isNavShrunk ? "shrink" : ""}`}>
         <ul className={`${navbarStyle}`}>
           {navLinks.map((nav) => (
             <li
