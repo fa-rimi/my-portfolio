@@ -42,4 +42,5 @@ https://far-portfolio.netlify.app/
 <li>Mobile and tablet responsiveness
 <li>Color palette and theme options
 <li>Individual page and timeline per project
+<li>Update README.md
 </ul>
