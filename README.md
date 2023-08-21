@@ -40,9 +40,11 @@ https://far-portfolio.netlify.app/
 
 <h3>Next Steps: </h3>
 <ul>
+<li>Individual page and timeline per project
+<li>Project archive page
 <li>Changing the skills section
 <li>Mobile and tablet responsiveness
 <li>Color palette and theme options
-<li>Individual page and timeline per project
+<li>Figure out a new way to filter
 <li>Update README.md
 </ul>
