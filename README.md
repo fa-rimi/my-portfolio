@@ -6,6 +6,11 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f7fbdaa5-14cc-4333-915b-37151bd2374b/deploy-status)](https://app.netlify.com/sites/far-portfolio/deploys) ![[](https://far-portfolio.netlify.app/)](https://img.shields.io/badge/website-live-neongreen)
 
+<h3>Aspect: </h3>
+<ul>
+<li>
+</ul>
+
 <h3>The Process: </h3>
 <span>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML" width="140px">
@@ -22,9 +27,17 @@
 https://far-portfolio.netlify.app/
 
 
+<h3>Credit: </h3>
+<ul>
+<li>https://brittanychiang.com/
+<li>https://contactmentor.com/filter-list-by-category-react-js/
+<li>https://www.youtube.com/watch?v=gPH7sCyXFb4
+</ul>
+
 <h3>Next Steps: </h3>
 <ul>
 <li>Changing the skills section
 <li>Mobile and tablet responsiveness
 <li>Color palette and theme options
+<li>Individual page and timeline per project
 </ul>
