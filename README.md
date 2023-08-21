@@ -9,6 +9,8 @@
 <h3>Aspect: </h3>
 <ul>
 <li>Filter projects by project type
+<li>Contact with external mailing link
+<li>Expand toggle to show experience details 
 </ul>
 
 <h3>The Process: </h3>
