@@ -4,9 +4,10 @@ import My from "../pages/My";
 import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
-import flipItg from "../assets/flipItg.gif"
-import aotny_splash from "../assets/aotny_splash.png"
-import bbb from "../assets/bbb.png"
+import flipItg from "../assets/flipItg.gif";
+import aotny_splash from "../assets/aotny_splash.png";
+import bbb from "../assets/bbb.png";
+import progress_bar from "../assets/progress_bar.png";
 
 // navbar links
 export const navLinks = [
@@ -73,9 +74,19 @@ export const techSkills = [
     id: "r-js",
     skills: "React JS",
   },
-]
+];
 
 export const workExp = [
+  {
+    id: "nbllc",
+    name: "Neuberger Berman",
+    role: "Software Developer Apprentice",
+    date: "Oct 2023 - Present",
+    description: [
+      "in-progress"
+    ],
+    skills: "Fullstack, Python, SQL",
+  },
   {
     id: "cffg",
     name: "Change Food For Good",
@@ -87,7 +98,7 @@ export const workExp = [
       "Oversaw the entire project lifecycle, streamlining debugging process by 12% through the identification of test scenarios and creation of comprehensive test plans",
     ],
     skills: "Fullstack, Bootstrap, GitHub, Git, JIRA, Agile",
-  },
+  }
 ];
 
 export const techProjects = [
@@ -120,6 +131,16 @@ export const techProjects = [
     date: "2022-2023",
     link: "https://www.americaontrial.org/",
     imgURL: aotny_splash,
+  },
+  {
+    category: "In-Progress",
+    id: "remind-me",
+    name: "Remind Me",
+    type: "Web Development and iOS",
+    skills: "",
+    date: "2023-2024",
+    link: "",
+    imgURL: progress_bar,
   },
   // {
   //   category: "",

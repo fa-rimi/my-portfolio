@@ -15,6 +15,7 @@
     "@rsuite/icons": "^1.0.3",
     "@types/react-router-dom": "^5.3.3",
     "axios": "^1.4.0",
+    "fund": "^1.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-external-link": "^2.2.0",
