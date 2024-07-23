@@ -5,9 +5,9 @@ import Experience from "../pages/Experience";
 import Projects from "../pages/Projects";
 import Skills from "../pages/Skills";
 import flipItg from "../assets/flipItg.gif";
-import aotny_splash from "../assets/aotny_splash.png";
 import bbb from "../assets/bbb.png";
-import progress_bar from "../assets/progress_bar.png";
+// import vertical_gardens from "../assets/vertical_gardens.gif";
+import vertical_gardens from "../assets/vetical_gardens.gif"
 
 // navbar links
 export const navLinks = [
@@ -80,7 +80,7 @@ export const workExp = [
   {
     id: "nbllc",
     name: "Neuberger Berman",
-    role: "Software Developer Apprentice",
+    role: "Generative AI Python Developer",
     date: "Oct 2023 - Present",
     description: [
       "in-progress"
@@ -104,6 +104,16 @@ export const workExp = [
 export const techProjects = [
   {
     category: "Develop",
+    id: "verticalGardens",
+    name: "Vertical Gardens",
+    type: "Web Development",
+    skills: "HTML/CSS, JavaScript, API",
+    date: "2024",
+    link: "https://verticalgardens.co.ke/",
+    imgURL: vertical_gardens,
+  },
+  {
+    category: "Develop",
     id: "flipIT",
     name: "flip IT",
     type: "Game",
@@ -122,26 +132,16 @@ export const techProjects = [
     link: "",
     imgURL: bbb,
   },
-  {
-    category: "Develop",
-    id: "aot",
-    name: "America On Trial",
-    type: "Web Development",
-    skills: "HTML/CSS, JavaScript, jQuery, Venobox, Bootstrap",
-    date: "2022-2023",
-    link: "https://www.americaontrial.org/",
-    imgURL: aotny_splash,
-  },
-  {
-    category: "In-Progress",
-    id: "remind-me",
-    name: "Remind Me",
-    type: "Web Development and iOS",
-    skills: "",
-    date: "2023-2024",
-    link: "",
-    imgURL: progress_bar,
-  },
+  // {
+  //   category: "Develop",
+  //   id: "aot",
+  //   name: "America On Trial",
+  //   type: "Web Development",
+  //   skills: "HTML/CSS, JavaScript, jQuery, Venobox, Bootstrap",
+  //   date: "2022-2023",
+  //   link: "https://www.americaontrial.org/",
+  //   imgURL: aotny_splash,
+  // },
   // {
   //   category: "",
   //   id: "",

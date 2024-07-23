@@ -44,8 +44,6 @@ const Experience = () => {
   return (
     // Render the Experience section
     <section id="experience" className={`${genSection2} ${doubleCol}`}>
-      {/* Title of the Experience section */}
-      <div className={`${doubleColTitle} ${headingStyles}`}>Experience</div>
       <div className={`${doubleColInfo}`}>
         {/* Map over the workExp array and render each work experience section */}
         {workExp.map((exp, index) => (

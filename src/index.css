@@ -8,6 +8,7 @@
 
     background: #F2F7F2;
     color: #161B36;
+    scroll-behavior: smooth;
 }
 
 .shrink {

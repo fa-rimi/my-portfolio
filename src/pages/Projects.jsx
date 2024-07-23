@@ -5,14 +5,13 @@ import {
   doubleColTitle,
   doubleColInfo,
   headingStyles,
-  genSection3,
+  genSection2,
 } from "../constants/styles";
 import Cards from "../components/Cards";
 
 const Projects = () => {
   return (
-    <section id="projects" className={`${genSection3} ${doubleCol}`}>
-      <div className={`${doubleColTitle} ${headingStyles}`}>Projects</div>
+    <section id="projects" className={`${genSection2}`}>
       <div className={`${doubleColInfo}`}>
         <Cards className={``} />
       </div>

@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@chatscope/chat-ui-kit-react": "^1.10.1",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@material-tailwind/react": "^2.1.0",
     "@rsuite/icons": "^1.0.3",
     "@types/react-router-dom": "^5.3.3",
